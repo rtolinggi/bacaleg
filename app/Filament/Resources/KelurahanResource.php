@@ -73,7 +73,7 @@ class KelurahanResource extends Resource
                 Tables\Columns\BadgeColumn::make('rukun_tetanggas_count')
                     ->sortable()
                     ->color('primary')
-                    ->label('RT')
+                    ->label('Lingkungan')
                     ->counts('rukun_tetanggas'),
 
                 Tables\Columns\BadgeColumn::make('pemungutan_suaras_count')

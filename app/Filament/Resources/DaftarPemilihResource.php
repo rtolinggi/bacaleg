@@ -131,7 +131,7 @@ class DaftarPemilihResource extends Resource
                                     ->preload(),
 
                                 Forms\Components\Select::make('rukun_tetangga_id')
-                                    ->label('Rukun Tetangga')
+                                    ->label('Lingkungan')
                                     ->options(function (Closure $get) {
                                         if ($get('kelurahan_id')) {
                                             return RukunTetangga::where('kelurahan_id', $get('kelurahan_id'))

@@ -23,9 +23,9 @@ class RukunTetanggaResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-library';
 
-    protected static ?string $modelLabel = 'Rukun Tetangga';
+    protected static ?string $modelLabel = 'Lingkungan';
 
-    protected static ?string $pluralModelLabel = 'Rukun Tetangga';
+    protected static ?string $pluralModelLabel = 'Lingkungan';
 
     // protected static ?string $navigationGroup = 'Utama';
 
@@ -94,7 +94,7 @@ class RukunTetanggaResource extends Resource
                     ->label('Kelurahan'),
 
                 Tables\Columns\TextColumn::make('nama')
-                    ->label('Nama')
+                    ->label('Lingkungan')
                     ->searchable(),
 
                 Tables\Columns\BadgeColumn::make('relawans_count')

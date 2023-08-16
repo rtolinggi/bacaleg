@@ -71,7 +71,7 @@ class RelawanResource extends Resource
                                             ->options([
                                                 'KECAMATAN' => 'KECAMATAN',
                                                 'KELURAHAN' => 'KELURAHAN',
-                                                'RT' => 'RT'
+                                                'RT' => 'LINGKUNGAN'
                                             ]),
 
                                         Forms\Components\Radio::make('tipe')
@@ -120,7 +120,7 @@ class RelawanResource extends Resource
                                     ->preload(),
 
                                 Forms\Components\Select::make('rukun_tetangga_id')
-                                    ->label('Rukun Tetangga')
+                                    ->label('Lingkungan')
                                     ->options(function (Closure $get) {
                                         if ($get('kelurahan_id')) {
                                             return RukunTetangga::where('kelurahan_id', $get('kelurahan_id'))
@@ -152,12 +152,12 @@ class RelawanResource extends Resource
                     ->enum([
                         'KECAMATAN' => 'KECAMATAN',
                         'KELURAHAN' => 'KELURAHAN',
-                        'RT' => 'RT'
+                        'RT' => 'LINGKUNGAN'
                     ])
                     ->colors([
                         'success' => 'KECAMATAN',
                         'warning' => 'KELURAHAN',
-                        'danger' => 'RT',
+                        'danger' => 'LINGKUNGAN',
                     ]),
 
                 Tables\Columns\BadgeColumn::make('tipe')
@@ -183,7 +183,7 @@ class RelawanResource extends Resource
                     ->options([
                         'KECAMATAN' => 'KECAMATAN',
                         'KELURAHAN' => 'KELURAHAN',
-                        'RT' => 'RT',
+                        'RT' => 'LINGKUNGAN',
                     ]),
 
                 Tables\Filters\SelectFilter::make('tipe')

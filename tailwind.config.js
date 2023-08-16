@@ -39,7 +39,7 @@ export default {
       current: 'currentColor',
       black: ' colors.black',
       white: colors.white,
-      utama: colors.green,
+      utama: colorPrimary[500],
     },
     extend: {
       colors: {

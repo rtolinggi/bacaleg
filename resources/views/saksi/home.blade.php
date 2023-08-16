@@ -5,7 +5,7 @@
         <div class="flex flex-col gap-4">
             <img src="{{ asset('img/splash.svg') }}" alt="" class="w-60">
             <h1 class="text-3xl font-semibold">
-                {{ env('APP_NAME') }}
+                SAKSI
             </h1>
             <p class="text-lg text-black/50">
                 Membangun masa depan melalui <br> partisipasi aktif
